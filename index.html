@@ -16,7 +16,7 @@
             padding: 0;
             background:#219ebc;/*linear-gradient(to bottom, #3498db, dimgray)*/;
             color: rgb(0, 0, 0);
-            font-family: Arial, sans-serif;
+            font-family: 'poppins';
             overflow: auto;
           
         }
@@ -69,14 +69,14 @@
 
         nav a {
             text-decoration: none;
-            color: rgb(0, 0, 0);
+            color: rgb(50, 50, 50);
             font-weight: bold;
             transition: color 0.3s ease;
             font-size: 20px;
         }
 
         nav a:hover {
-            color: #fffdfa;
+            color: #000000;
         }
 
         .discipline-icons {
@@ -156,8 +156,8 @@
 
         /* Animated Panda Button */
         .panda-btn {
-           position:fixed;
-            bottom: 20px;
+           position:absolute;
+            top:850px;
             right: 20px;
             cursor: pointer;
             animation: movePanda 1s infinite alternate;
@@ -226,18 +226,62 @@
 
 
         .footer {
+            text-align: center;
             padding: 8px;
             background-color: #fb8500;
-            color: white;
+            color: rgb(0, 0, 0);
             font-size: 'poppins';
             height:80px;
             position:static;
         }
-        @media all and (max-width:1000px) {
+        @media screen and (max-width:1000px) {
+            body {
+font-family:'poppins';
+            }
+            
+            header
+            {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            nav
+            {
+                
+                position:fixed;
+                background-color: #219ebc;
+                height:50px;
+                width:100vw;
+              left:25px;
+              top:0px;
+            }
+            nav a 
+            {
+                font-size: 16px;
+                margin:auto
+            }
+            nav a:hover{
+                color:rgb(0, 0, 0);
+            }
+            .footer
+            {
+                width:428px;
+                display:flex;
+                flex-wrap: wrap;;
+            }
+        }
+        @media screen and (max-width:360px) {
+            .discipline
+            {
+             height:30%;
+             width:30%;
+            }
             nav
             {
                 position:relative;
-              left:25px;
+                font-size: 5px;
+              left:15px;
               top:10px;
             }
             nav a 
@@ -247,9 +291,13 @@
             nav a:hover{
                 color:rgb(15, 55, 80);
             }
+            header
+            {
+                font-size: 15px;
+            }
             .footer
             {
-                width:400px;
+                width:320px;
             }
         }
     </style>
@@ -264,7 +312,7 @@
     </nav>
     <div class="container">
         <header>
-            <h1>Welcome To<br> <span style="color: /*mediumseagreen*/#ffb703; font-size:150%;">LearNexus</span> <br><P style="font-size:20px; color:/*lightgray*/#fb8500;">- Your Gateway to Learning</p></h1>
+            <h1>Welcome To<br> <span style="color: /*mediumseagreen*/#ffb703; font-size:150%;" class="lrn">LearNexus</span> <br><P style="font-size:20px; color:/*lightgray*/#fb8500;">- Your Gateway to Learning</p></h1>
 
            
         </header>
@@ -292,11 +340,11 @@
                 <p>NCERT</p></a>
             </div>
             <div class="discipline">
-                <a href="soon.html"><i class="fas fa-atom"></i>
+                <a href="fifth.html"><i class="fas fa-atom"></i>
                 <p>Physics</p></a>
             </div>
             <div class="discipline">
-                <a href="fourth.html"><i class="fas fa-landmark"></i>
+                <a href="index4.html"><i class="fas fa-landmark"></i>
                 <p>UPSC</p></a>
             </div>
             <div class="discipline">
@@ -304,7 +352,7 @@
                 <p>Poetry</p></a>
             </div>
             <div class="discipline">
-                <a href="fifth.html"><i class="fas fa-music"></i>
+                <a href="index5.html"><i class="fas fa-music"></i>
                 <p>Music</p></a>
             </div>
             <div class="discipline">
@@ -406,9 +454,9 @@
        
     </div>
     <footer class="footer" id="nm">
-        &copy; 2023 SSP. All rights reserved. |
-        <a href="#">Privacy Policy</a> |
-        <a href="#">Terms of Service</a>
+        &copy; 2023 SSP. All rights reserved. <span style="color:rgb(0, 0, 0)">|</span>
+        <a href="#" style="color:rgb(0, 0, 0);text-decoration: none;">Privacy Policy</a><span style="color:rgb(0, 0, 0)">|</span> 
+        <a href="#" style="color:rgb(0, 0, 0);text-decoration: none;">Terms of Service</a>
     </footer>
 </body>
 </html>
