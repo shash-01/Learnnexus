@@ -88,3 +88,9 @@ h1:hover::after{
         width:100px;
     }
 }
+@media screen and (max-width:390px) {
+    #vid
+    {
+        width:320px;
+    }
+}
