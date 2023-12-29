@@ -42,7 +42,7 @@ img{
     font-family: 'poppins';
     font-weight: 600;
     margin-left:5px;
-    color:rgb(255, 255, 255) ;
+    color:#ffffff ;
     animation-name: pr6;
     /*animation-duration:2.7s;
     animation-iteration-count:infinite ;
@@ -74,11 +74,12 @@ img{
 }
 .head
 {
-    margin-left:0px;
     font-size: 25px;
     font-family: 'poppins';
     border-bottom: 2px solid black;
     display: inline;
+    font-weight: 600;
+    
 }
 .head:hover
 {
@@ -90,11 +91,11 @@ img{
     #csoon
     {
         padding:5px;
-        text-align: center;
+        margin:auto;
         height:50px;
         font-size: 22px;
-      
-        top:200px;
+      position:relative;
+        top:400px;
         width:360px;
         font-size: 25px;
         font-weight: 600;
@@ -102,12 +103,13 @@ img{
         text-align: center;
     }
     .head
-{
-    margin:40%;
+{   
     font-size: 19px;
     font-family: 'poppins';
     border-bottom: 2px solid rgb(24, 89, 224);
-    display: inline;
+    display: flex;
+    justify-content: center;
+   align-items: center;
     
 }
 .panda{
