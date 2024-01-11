@@ -14,7 +14,7 @@ body
     font-family: 'Open Sans', sans-serif;
 
     font-size: 20px;
-    background-color: #eff1f5;
+    background-color: #236aef;
 }
 .container
 {
@@ -22,15 +22,15 @@ body
     width:450px;
     /* border:2px solid black; */
     border-radius: 20px;
-    box-shadow: 4px 2px 3px 4px rgb(214, 211, 214);
-    background-color: transparent;
+    box-shadow: 3px 0px 9px -1px rgb(214, 211, 214);
+    background-color: #ffffff;
     border:1px solid beige;
-
+    margin:auto;
 }
 .login
 {
     background-color: rgb(24,89,224);
-    color:beige;
+    color:rgb(254, 254, 223);
     height:200px;
     width:450px;
     border-radius: 20px;
@@ -133,4 +133,31 @@ body
     color: rgb(7, 7, 7);
     cursor: pointer;
 
+}
+@media all and (max-width:600px) {
+ .container{
+    height:600px;
+    width:95vw;
+    margin:auto;
+margin-top:-100px;
+ } 
+ .login
+ {
+    width:93vw;
+ margin:auto;
+ margin-top:5px;
+ height:150px;
+ }  
+ #uname
+ {
+    width:92vw;
+ }
+ #pwd
+ {
+    width:92vw;
+ }
+ #btn
+ {
+    width:92vw;
+ }
 }
