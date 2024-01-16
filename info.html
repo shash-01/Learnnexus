@@ -10,19 +10,20 @@
 
 *
 {
-    font-family: 'poppins';
-}
+    font-family: 'poppins', Verdana, Geneva, Tahoma, sans-serif;
+}  
         body{
             background-color: rgb(0, 136, 255);
             font-family: 'poppins';
         }
         .msg
         {
-            color:white;
+            color:rgb(0, 0, 0);
             font-size: 60px;
             font-weight: 600;
             display:flex;
             justify-content: center;
+            animation:sld 1.4s ease-in-out;
         }
         .msg1
         {
@@ -30,19 +31,57 @@
             font-size: 60px;
             font-weight: 600;
             display:flex;
+        justify-content: center;
+        animation:sld 1.8s ease-in-out;
+        }
+        .demo
+        {
+            color:rgb(255, 223, 65);
+            font-size: 60px;
+            font-weight: 600;
+            display:flex;
             justify-content: center;
+            animation:sld 1.6s ease-in-out;
+        }
+        @keyframes sld {
+            from{
+               transform: translateX(-1000px); 
+            }
+            to 
+            {
+                transform:translateX(0px);
+            }
+        }
+        .red
+        {
+            color:rgb(203, 0, 0);
+            font-size: 70px;
+            font-weight: 600;
+            display:flex;
+            justify-content: center;
+            animation:sld 1.6s ease-in-out;
         }
         @media screen and (max-width:600px) {
             .msg1
             {
                 font-size: 40px;
-                color: rgb(37, 37, 37);
+                color: rgb(255, 255, 255);
             }
+            .demo
+        {
+            color:rgb(255, 223, 65);
+            font-size: 60px;
+            font-weight: 600;
+            display:flex;
+            justify-content: left;
+        }
         }
     </style>
 </head>
 <body>
-    <div class="msg">This Is Only For Demo.</div>
+    <div class="msg">This Is Only For The </div>
+    <div class="demo">Demo.</div>
     <div class="msg1">No Database Is Deployed.</div>
+    <div class="red">📵</div>
 </body>
 </html>
