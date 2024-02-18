@@ -63,6 +63,7 @@ body
     background-color: #c9d7cd;
     border:none;
     font-size: 14px;
+    padding:5px;
     /* font-family: 'Playpen Sans', cursive; */
     
 }
@@ -74,6 +75,8 @@ body
     border:none;
     font-size: 14px;
     background-color: #c9d7cd;
+    
+    padding:5px;
     /* background-color: #a8b5ac; */
     /* font-family: 'Playpen Sans', cursive; */
 }
