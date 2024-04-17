@@ -23,7 +23,7 @@ body {
     /*#219ebc;/*linear-gradient(to bottom, #3498db, dimgray)*/
 
     color: rgb(0, 0, 0);
-    font-family: 'poppins';
+    font-family: 'poppins',sans-serif;
     overflow: auto;
     font-weight: 500;
 
@@ -80,7 +80,7 @@ h1 {
         #000000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
-    font-family: 'poppins';
+    font-family: 'poppins',sans-serif;
     font-weight: 800;
     line-height: 75px;
     animation: fadeIn 1.4s ease-in-out;
@@ -131,6 +131,8 @@ nav a {
     font-weight: bold;
     transition: color 0.3s ease;
     font-size: 20px;
+    margin-right:-5px;
+    box-shadow: 0px 2px 4px 0px rgba(103, 103, 103, 0.555);
 }
 
 nav a:hover {
@@ -178,8 +180,8 @@ nav a:hover {
 
 .discipline i {
     text-align: center;
-    height: 100px;
-    width: 110px;
+    height: 98px;
+    width: 108px;
     text-align: center;
     font-size: 50px;
     color: rgb(252, 231, 42);
@@ -191,11 +193,13 @@ nav a:hover {
     cursor: pointer;
     background-size: cover;
     transition: all, 0.5s;
+    box-shadow: 0px 2px 4px 0px rgba(79, 79, 79, 0.555);
+
 }
 
 .discipline i:hover {
-    transform: scale(1.2);
-    color: rgb(255, 242, 0);
+    transform: scale(1.1);
+    color: rgb(234, 211, 0);
 
 }
 
@@ -222,10 +226,15 @@ nav a:hover {
     width: 30%;
     padding: 20px;
     margin: 10px;
-    background-color:
-        /*darkslategray;*/
-        rgb(105, 120, 233);
+    background-color:#99b6c3
+    /*rgb(105, 120, 233)*/;
+    color:rgb(0, 0, 0);
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 19px;
     border-radius: 5px;
+    box-shadow: 0px 2px 4px 0px rgba(103, 103, 103, 0.555);
+
 }
 
 .course h2 {
@@ -274,12 +283,14 @@ nav a:hover {
     margin-top: auto;
     position: static;
     z-index: 1;
+    border: none;
+    box-shadow: 0px 2px 4px 0px rgba(90, 90, 90, 0.555);
 
 
 }
 
 .cartoon-btn:hover {
-    background-color: #ff1491;
+    background-color: #ff49aa;
 }
 
 @keyframes bounce {
@@ -327,9 +338,111 @@ nav a:hover {
         /* Adjust for smaller screens */
     }
 }
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #22627e/*rgb(43, 73, 95)*/;
+    align-items: center;
+    color: white;
+  }
+  
+  .footer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    margin-top: 10px;
+   
+    
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-wrap: wrap;
+    font-size: 30px;
+  }
+  .social-media a {
+    color: white;
+    margin: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    color: white;
+  }
+  .footer1 a .lg {
+    background: none;
+  }
+  #fb:hover
+  {
+    color:rgb(15, 127, 255);
+    animation:enlarge ease-in-out 1.5s;
+
+  }
+  #yt:hover
+  {
+    color:red;
+    animation:enlarge ease-in-out 1.5s;
+  }
+  #lnkd:hover
+  {
+    color:rgba(13, 46, 72, 0.838);
+    animation:enlarge ease-in-out 1.5s;
+  }
+  #insta:hover
+  {
+    color:rgba(163, 42, 177, 0.826);
+    animation:enlarge ease-in-out 1.5s;
+  }
+  footer h1 
+  {
+    animation: none;
+    color:rgb(255, 221, 0);
+    animation:enlarge ease-in-out 1.5s;
+  }
+  .social-media a ion-icon {
+    color: white;
+    background-color: black;
+  }
+  .social-media a:hover ion-icon {
+    color: rgb(0, 188, 251);
+    
+    transition:0.5s ease;
+  }
+  @keyframes enlarge {
+    0%
+    {
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.2);
+    }
+    100%
+    {
+        transform: scale(1.2);
+    }
+  }
+  .footer0 {
+    font-weight: 1200;
+    transition-duration: 1s;
+  }
+  .footer0:hover {
+    color: rgb(243, 168, 7);
+  }
+  
+  .footer3 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer3 h4 {
+    margin: 0 10px;
+  }
 
 
-.footer {
+/*.footer {
     text-align: center;
     padding: 8px;
     background-color: rgb(43, 73, 95);
@@ -342,7 +455,7 @@ nav a:hover {
 .footer a {
     color: white
 }
-
+*/
 @media screen and (max-width:1080px) {
     body {
         font-family: 'poppins';
@@ -544,6 +657,7 @@ nav a:hover {
 
 }
    </style>
+    
 </head>
 <body>
     <nav>
@@ -616,7 +730,7 @@ nav a:hover {
             </div>
             <div class="discipline">
                 <a href="content/chem.html"><i class="fas fa-graduation-cap"></i>
-                <p>Chemistery</p></a>
+                <p>Accounts</p></a>
             </div>
             <div class="discipline">
                 <a href="soon.html"><i class="fas fa-microscope"></i>
@@ -694,10 +808,37 @@ nav a:hover {
 
        
     </div>
-    <footer class="footer" id="nm">
-        &copy; 2023 SSP. All rights reserved. <span style="color:rgb(255, 255, 255)">|</span>
-        <a href="#" style="color:rgb(255, 255, 255);text-decoration: none;">Privacy Policy</a><span style="color:rgb(255, 255, 255)">|</span> 
-        <a href="#" style="color:rgb(255, 255, 255);text-decoration: none;">Terms of Service</a>
-    </footer>
+    <footer>
+        <div class="footer0">
+     <h1>LearNexus </h1>
+   </div>
+   <div class="footer1">
+     Connect with us at<div class="social-media">
+       <a href="https://www.facebook.com/profile.php?id=61558029877531">
+         <ion-icon name="logo-facebook" class="lg" id="fb"></ion-icon>
+       </a>
+       <a href="#">
+         <ion-icon name="logo-linkedin" class="lg" id="lnkd"></ion-icon>
+       </a>
+       <a href="#">
+         <ion-icon name="logo-youtube" class="lg" id="yt"></ion-icon>
+       </a>
+       <a href="https://www.instagram.com/learnexus_?igsh=anp4czR2dXJ2MDhu">
+         <ion-icon name="logo-instagram" class="lg" id="insta"></ion-icon>
+       </a>
+       <a href="https://x.com/_LearNexus?t=WWaTfSccmSt6ATR5vjw6OA&s=08">
+         <ion-icon name="logo-twitter" class="lg"></ion-icon>
+       </a>
+     </div>
+   </div>
+
+ 
+   <div class="footer3">Copyright © <h4>LearNexus</h4> 2021-2028</div>
+ 
+
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+ <script src="./ecommerce.js"></script>
+
+         </footer>
 </body>
 </html>
