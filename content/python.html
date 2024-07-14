@@ -4,206 +4,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style_content.css">
+    <title>Quiz</title>
+    <style>
+        /* Your CSS styles here */
+         
+       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Inter&family=Poppins:wght@700;700&family=Roboto:wght@500;700&display=swap');
+
+       *
+{
+    font-family: 'poppins';
+}
+        body {
+            font-family: "Kanit", sans-serif;
+            margin: 0;
+            /* padding: 20px; */
+            /* border:2px solid black; */
+            /* width: 60vw; */
+            /* height: 60vh; */
+            margin: auto;
+            /* background-color: rgb(199, 178, 152); */
+            /* background: url(LearNexus-removebg-preview.png); */
+            /* background: linear-gradient(49deg, rgb(200, 200, 241), rgb(204, 204, 239), rgb(229, 229, 237)); */
+            background-image: linear-gradient(275deg, #8BC6EC 0%, #9599E2 100%);
+height:130%;
+            /* background-repeat: no-repeat; */
+            /* background-size: cover; */
+        }
+        .container
+        {
+            /* display:flex; */
+            /* border:5px solid rgb(112, 147, 234); */
+            box-shadow: 0px 2px 4px 0px rgba(75, 74, 74, 0.598);
+            width:60vw;
+            height:79vh;
+            margin-left:350px;
+            background-color:white;
+            border-radius: 10px;
+            padding:15px;
+            border: none;
+            margin-top: 30px;
+            margin: 20px auto 10px;
+            
+            
+
+            /* height:60vh; */
+        }
+
+        /* height:500px; */
+        /* overflow:none; */
+        /* border: 2px solid blue; */
+
+
+        .question {
+            margin-bottom: 0px;
+            margin-top: -5px;
+            /* border:2px solid red; */
+            font-size: 15px;
+            font-weight: 500;
+color:rgb(48, 48, 48);
+        }
+
+        #score {
+            display: flex;
+            justify-content: center;
+            margin-top: -50%;
+            position: relative;
+           right:280px;
+            font-size: 30px;
+            box-shadow: 0px 1px 1px rgb(73, 71, 71);
+            /* border: 3px solid red; */
+            width: 320px;
+        
+            text-align: center;
+            margin-left: 550px;
+            border-radius: 4px;
+            background: rgb(50, 101, 190);
+            /* transition: allow-discrete 1s 3s sliding-vertically ease-in; Transition for all properties over 0.5 seconds */
+        }
+
+
+        #btn  {
+            text-align: center;
+            position: absolute;
+            left:39%;
+            bottom:15px;
+            height: 38px;
+            width: 170px;
+            font-size: 17px;
+            margin-top: -15px;
+            font-weight: 700;
+            border-radius: 4px;
+            color:rgb(229, 229, 229);
+             background-color:rgb(33, 59, 127) ;
+             box-sizing: border-box;
+             box-shadow: 0px 2px 4px 0px rgba(44, 44, 44, 0.598);
+            cursor: pointer;
+            border: none;
+            margin: auto;
+        }
+        p
+        {
+            color:black;
+            font-weight: 600;
+        }
+
+        #btn:hover {
+            background-color: rgb(44, 80, 172);
+        }
+        .navbar
+        {
+            /* position:absolute; */
+            height:60px;
+            background-color: white;
+            box-shadow: 0px 2px 4px 0px rgba(96, 96, 96, 0.686);
+        }
+        .navbar img{
+            height:300px;
+            width:300px;
+            position:relative;
+            top:-100px;
+            left:40%;
+            
+        }
+       
+        input
+        {
+            margin-bottom: 5px;
+        }
+        #resetBtn
+        {
+            text-align: center;
+            position: absolute;
+            left:51%;
+            bottom:15px;
+            height: 38px;
+            width: 170px;
+            font-size: 17px;
+            margin-top: -15px;
+            font-weight: 700;
+            border-radius: 4px;
+            color:rgb(229, 229, 229);
+             background-color:rgb(33, 59, 127) ;
+             box-sizing: border-box;
+             box-shadow: 0px 2px 4px 0px rgba(44, 44, 44, 0.598);
+            cursor: pointer;
+            border: none;
+            margin: auto;
+        }
+        #resetBtn:hover
+        {
+            background-color: rgb(44, 80, 172);
+        }
+        @media screen and (max-width:368px) {
+            .container
+            {
+                height:102vh;
+                width:38vh;
+                
+            }
+            #resetBtn
+            {
+                top:119%;
+            }
+            #btn
+            {
+                top:119%;
+                left:2%;
+            }
+            .navbar img
+            {
+               left:40px;
+
+                margin:auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="h1"><img src="LearNexus-removebg-preview.png" alt="logo" id="logo"> <a href="minorproj.html"><button>Home</button></a> </div>
-
-    <div class="bdy">
-        <div class="lftmrgn">
-            <ul>
-                <a href="#" class="active" id="active"> <li id="subsc"> Download Pdf  </li> </a>
-                <a href="#pt">
-                    <li>Python Tutorial</li>
-                </a>
-                <a href="#pd">
-                    <li>Python Data Types</li>
-                </a>
-                <a href="#po">
-                    <li>Python Operators</li>
-                </a>
-                <a href="#pc">
-                    <li>Python Conditional Statements</li>
-                </a>
-                <a href="#pl">
-                    <li>Python Loops</li>
-                </a>
-                <a href="#pf">
-                    <li>Python Functions</li>
-                </a>
-            </ul>
+    <!-- Your navigation bar -->
+    <nav class="navbar"><img src="LearNexus-removebg-preview.png" alt=""></nav>
+    <div class="container">
+        <div class="question">
+            <p>1. What is Python?</p>
+            <input type="radio" name="q1" value="a"> a) A programming language<br>
+            <input type="radio" name="q1" value="b"> b) A type of snake<br>
+            <input type="radio" name="q1" value="c"> c) A database management system<br>
         </div>
-
-
-        <div class="cntnt">
-            <span
-                style="text-align: center; display:flex; align-items: center; justify-content: center; font-size: 30px;font-weight: 500; color:#2c7da0">What
-                is Python?</span><br>Python is a high-level, general-purpose, and very popular programming language.
-            Python programming language (latest Python 3) is being used in web development, and Machine Learning
-            applications, along with all cutting-edge technology in Software Industry. Python language is being used by
-            almost all tech-giant companies like – Google, Amazon, Facebook, Instagram, Dropbox, Uber… etc.
-            <br><br>
-
-
-            <img src="https://logos-world.net/wp-content/uploads/2021/10/Python-Logo.png" alt="" id="frstpic"
-                style="border-radius:4px;">
-            <br>
-            <br>
-
-
-            <span
-                style="text-align: center; display:flex; align-items: center; justify-content: center; font-size: 30px;font-weight: 500; color:#2c7da0" id="pt">Getting
-                started with Python Programming </span><br>
-            Welcome to the Python tutorial section! Here, we’ll cover the essential elements you need to kickstart your
-            journey in Python programming. From syntax and keywords to comments, variables, and indentation, we will
-            explore the foundational concepts that underpin Python development.
-            <ul>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Learn Python Basics</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Syntax</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Keywords in Python</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Comments in Python</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Learn Python Variables</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Learn Python Data Types</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Indentation and why is it important on
-                            Python</span></a></li>
-            </ul>
-            <br><br>
-
-
-            <span
-                style="text-align: center; display:flex; align-items: center; justify-content: center; font-size: 30px;font-weight: 500; color:#2c7da0">Learn
-                Python Input/Output </span><br>
-            In this segment, we delve into the fundamental aspects of handling input and output operations in Python,
-            crucial for interacting with users and processing data effectively. From mastering the versatile print()
-            function to exploring advanced formatting techniques and efficient methods for receiving user input, this
-            section equips you with the necessary skills to harness Python’s power in handling data streams seamlessly.
-            <ul>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python print() function</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">f-string in Python</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Print without newline in Python</span></a>
-                </li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python | end parameter in
-                            print()</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python | sep parameter in
-                            print()</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python | Output Formatting</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Taking Input in Python</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Taking Multiple Inputs from users in
-                            Python
-                        </span></a></li>
-
-            </ul>
-            <br><br>
-
-
-            <span
-                style="text-align: center; display:flex; align-items: center; justify-content: center; font-size: 30px;font-weight: 500; color:#2c7da0" id="pd">Python
-                Data Types </span><br>
-            Python offers, enabling you to manipulate and manage data with precision and flexibility. Additionally,
-            we’ll delve into the dynamic world of data conversion with casting, and then move on to explore the
-            versatile collections Python provides, including lists, tuples, sets, dictionaries, and arrays.
-            <ul>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python print() function</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">f-string in Python</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Print without newline in Python</span></a>
-                </li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python | end parameter in
-                            print()</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python | sep parameter in
-                            print()</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python | Output Formatting</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Taking Input in Python</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Taking Multiple Inputs from users in
-                            Python
-                        </span></a></li>
-
-                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20191023173512/Python-data-structure.jpg"
-                    alt="" style="width:500px;margin-left:120px;margin-top:50px;" id="frstpic">
-
-            </ul>
-            <br><br>
-
-
-            <span
-                style="text-align: center; display:flex; align-items: center; justify-content: center; font-size: 30px;font-weight: 500; color:#2c7da0"id="po">Learn
-                Python Operators</span><br>
-                From performing basic arithmetic operations to evaluating complex logical expressions, we’ll cover it all. We will delve into comparison operators for making decisions based on conditions, and then explore bitwise operators for low-level manipulation of binary data. Additionally, we will unravel the intricacies of assignment operators for efficient variable assignment and updating. Lastly, we will demystify membership and identity operators, such as in and is, enabling you to test for membership in collections and compare object identities with confidence.
-            <ul>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Arithmetic operators</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Comparison Operators</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Logical Operators</span></a>
-                </li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Bitwise Operators</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Assignment Operators</span></a></li>
-                <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Membership & Identity Operators | Python “in”, and “is” operator</span></a></li>
-                </span>
-
-            </ul>
-            <br><br>
-
-            <span
-            style="text-align: center; display:flex; align-items: center; justify-content: center; font-size: 30px;font-weight: 500; color:#2c7da0"id="pc">Python Conditional Statement</span><br>
-            These statements are pivotal in programming, enabling dynamic decision-making and code branching. In this section of Python Tutorial, we’ll explore Python’s conditional logic, from basic if…else statements to nested conditions and the concise ternary operator. We’ll also introduce the powerful match case statement, new in Python 3.10. By the end, you’ll master these constructs, empowering you to write clear, efficient code that responds intelligently to various scenarios. Let’s dive in and unlock the potential of Python’s conditional statements.
-        <ul>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">If-else</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Nested-If statement</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Ternary Condition in Python</span></a>
-            </li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Match Case Statement</span></a></li>
-            </span>
-
-        </ul>
-        <br><br>
-
-
-        <span
-            style="text-align: center; display:flex; align-items: center; justify-content: center; font-size: 30px;font-weight: 500; color:#2c7da0" id="pl">Python Loops</span><br>
-            Here, we’ll explore Python’s loop constructs, including the for and while loops, along with essential loop control statements like break, continue, and pass. Additionally, we’ll uncover the concise elegance of list and dictionary comprehensions for efficient data manipulation. By mastering these loop techniques, you’ll streamline your code for improved readability and performance.
-        <ul>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">For Loop</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">While Loop</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Loop control statements (break,continue,pass)</span></a>
-            </li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python List Comprehension</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python Dictionary Comprehension</span></a></li>
-            </span>
-
-        </ul>
-        <br><br>
-
-
-        <span
-            style="text-align: center; display:flex; align-items: center; justify-content: center; font-size: 30px;font-weight: 500; color:#2c7da0"id="pf">Python Functions</span><br>
-            Functions are the backbone of organized and efficient code in Python. Here, we’ll explore their syntax, parameter handling, return values, and variable scope. From basic concepts to advanced techniques like closures and decorators. Along the way, we’ll also introduce versatile functions like range(), and powerful tools such as *args and **kwargs for flexible parameter handling. Additionally, we’ll delve into functional programming with map, filter, and lambda functions.
-        <ul>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python Function syntax</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Arguments and Return Values in Python Function</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python Function Global and Local Scope Variables</span></a>
-            </li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Use of pass Statement in Function
-            </span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Return statement in Python Function</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python range() function</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">*args and **kwargs in Python Function</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python closures</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python ‘Self’ as Default Argument</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Decorators in Python</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Python closures</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Map Function</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Filter Function</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Reduce Function</span></a></li>
-            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Lambda Function</span></a></li>
-
-            </span>
-
-        </ul>
-        <br><br>
+        <hr>
+        <div class="question">
+            <p>2. Which statement is true about Python?</p>
+            <input type="radio" name="q2" value="a"> a) Python is a high-level programming language<br>
+            <input type="radio" name="q2" value="b"> b) Python is a low-level programming language<br>
+            <input type="radio" name="q2" value="c"> c) Python is only used for web development<br>
         </div>
+        <hr>
+        <div class="question">
+            <p>3. What is the main purpose of using Python?</p>
+            <input type="radio" name="q3" value="a"> a) Web development<br>
+            <input type="radio" name="q3" value="b"> b) Data analysis and machine learning<br>
+            <input type="radio" name="q3" value="c"> c) Mobile app development<br>
+        </div>
+        <hr>
+        <div class="question">
+            <p>4. Which of the following is NOT a Python data type?</p>
+            <input type="radio" name="q4" value="a"> a) Integer<br>
+            <input type="radio" name="q4" value="b"> b) Array<br>
+            <input type="radio" name="q4" value="c"> c) String<br>
+        </div>
+        <hr>
+        <div class="question">
+            <p>5. What is the correct way to write a comment in Python?</p>
+            <input type="radio" name="q5" value="a"> a) //This is a comment<br>
+            <input type="radio" name="q5" value="b"> b) #This is a comment<br>
+            <input type="radio" name="q5" value="c"> c) /*This is a comment*/<br>
+        </div>
+        
+        <div id="score"></div>
+    </div>
+  
+    <button onclick="checkAnswers()" id="btn">Submit</button>
+    <button type="button" id="resetBtn">Reset</button>
+    <script>
+        // Your JavaScript code here
+        function checkAnswers() {
+            let score = 0;
+            const answers = ['a', 'b', 'a', 'a', 'a']; 
 
-    </div>
-    </div>
+            for (let i = 1; i <= 5; i++) {
+                const selectedAnswer = document.querySelector(`input[name=q${i}]:checked`);
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === answers[i - 1]) {
+                        score++;
+                    }
+                }
+            }
+
+            const scoreDisplay = document.getElementById('score');
+            scoreDisplay.innerHTML = `Your score is: ${score}/5`;
+        }
+
+        document.getElementById('resetBtn').addEventListener('click', function() {
+            // Reset the form
+            document.querySelectorAll('input[type="radio"]').forEach(radio => radio.checked = false);
+            // Clear the score display
+            document.getElementById('score').innerHTML = '';
+        });
+    </script>
 </body>
 
 </html>
