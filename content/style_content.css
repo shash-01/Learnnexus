@@ -290,6 +290,7 @@ body
         {
             position:relative;;
             top:5px;
+            margin:auto;
             display:block;
             width:300px;
             left:10px;
