@@ -15,26 +15,19 @@
        *
 {
     font-family: 'poppins';
+    /* margin:0;
+    padding:0; */
 }
         body {
             font-family: "Kanit", sans-serif;
-            margin: 0;
-            /* padding: 20px; */
-            /* border:2px solid black; */
-            /* width: 60vw; */
-            /* height: 60vh; */
-            margin: auto;
-            /* background-color: rgb(199, 178, 152); */
-            /* background: url(LearNexus-removebg-preview.png); */
-            /* background: linear-gradient(49deg, rgb(200, 200, 241), rgb(204, 204, 239), rgb(229, 229, 237)); */
-            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
-height:100vh;
-            /* background-repeat: no-repeat; */
-            /* background-size: cover; */
+            margin:auto;
+            background-image: linear-gradient(270deg, #8BC6EC 0%, #9599E2 100%);
+            overflow-x:hidden;
         }
         .container
         {
-            /* display:flex; */
+             /* display:flex; 
+             flex-direction: column; */
             /* border:5px solid rgb(112, 147, 234); */
             box-shadow: 0px 2px 4px 0px rgba(75, 74, 74, 0.598);
             width:60vw;
@@ -152,6 +145,35 @@ height:100vh;
         {
             background-color: rgb(44, 80, 172);
         }
+        @media screen and (max-width:420px){
+            
+            .container
+            {
+                position: relative;
+                bottom:-10px;
+                overflow: auto;
+                display:flex;
+                flex-direction: column;
+                margin:0 auto;
+                width:275px;
+            }
+            .question {
+            max-width:100%;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            font-size: 15px;
+            font-weight: 600;
+
+        }
+        .navbar img{
+        left:10%;
+        }
+        #btn
+        {
+            position: absolute;
+            left:10px;
+        }
+    }
     </style>
 </head>
 
